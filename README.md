@@ -80,3 +80,4 @@ To customize validation rules, modify the `validationSchema` defined in `FormWit
 
 ## License
 
+This project is licensed under the **MIT License**. Feel free to modify and use it in your own projects.
