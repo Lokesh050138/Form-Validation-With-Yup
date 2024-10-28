@@ -29,3 +29,46 @@ Ensure you have the following software installed:
    ```bash
    git clone https://github.com/your-username/form-with-yup.git
    cd form-with-yup
+
+###Install dependencies:
+
+##bash
+npm install
+
+###Start the development server:
+
+##bash
+Copy code
+npm run dev
+##The app will be available at http://localhost:3000.
+
+Project Structure
+FormWithYup.jsx: The main form component.
+Modal: A custom component for displaying a confirmation message upon successful submission.
+Form-with-yup.css: Styling for the form and modal components.
+Form Validation Rules
+The form fields are validated based on the following rules:
+
+First Name / Last Name: Required
+Email: Required and must be a valid email format
+Phone Number: Must be exactly 10 digits
+Password: Minimum of 8 characters, must contain at least one uppercase letter, one lowercase letter, one symbol, and one number
+Confirm Password: Must match the password field
+Age: Must be a number between 18 and 100
+Gender: Required
+Interests: At least one interest must be selected
+Date of Birth: Required
+Usage
+Fill out each form field according to the validation rules.
+Submit the form by clicking the Submit button.
+If there are validation errors, they will appear below each field.
+Upon successful validation, a modal will appear with the message "Data successfully saved!"
+Customization
+To customize validation rules, modify the validationSchema defined in FormWithYup.jsx. You can also add or remove form fields and adjust the form layout using the accompanying CSS file.
+
+Technologies Used
+React: Component-based UI library
+Yup: Validation schema builder
+CSS: For styling the components
+License
+This project is licensed under the MIT License. Feel free to modify and use it in your own projects.
